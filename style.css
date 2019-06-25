@@ -1,0 +1,129 @@
+* {margin: 0; padding: 0, box-sizing: border-box;}
+
+body {
+  height:100%;
+}
+
+.news-module {
+    width: 100%;
+    float: left;
+    height: auto;
+}
+
+.news-sub-module {
+    width: 70vw;
+    height: auto;
+    margin: 2vw 5vw 3vw 5vw; /* using vw for margin and padding instead of px maintains desired float design. otherwise, cards are centered */
+    padding: 4vw;
+    float: left;
+    color: black;
+    cursor: pointer;
+}
+
+.news-sub-module:nth-child(1) {
+    background-color: #C5DAFF;
+}
+
+.news-sub-module:nth-child(2) {
+    background-color: #F9CA00;
+}
+
+.news-sub-module:nth-child(3) {
+    background-color: #FDC29F;
+}
+
+.news-sub-module:nth-child(4) {
+    background-color: #E2DEFF;
+}
+
+.news-sub-module:nth-child(even) {
+    float: right;
+}
+
+.news-sub-module:nth-child(odd):hover {
+    transform: translate(3vw);
+    transition-duration: .5s;
+}
+
+.news-sub-module:nth-child(even):hover {
+    transform: translate(-3vw);
+    transition-duration: .5s;
+}
+
+  .news-description {
+font-size: 14px;
+    line-height: 1.4;
+    font-family: "Roboto";
+}
+
+.news-date {
+    margin: 0vw 0 .7vw 0;
+    color: black;
+      font-size: 14px;
+  font-family: "Roboto";
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-style-one {
+      margin: 1vw 0 1vw 0;
+    font-size: 24px;
+  line-height: 1.25;
+  font-family: "Archivo Black";
+text-transform: uppercase;
+width: 100%;
+}
+
+.news-more {
+    float: left;
+      font-size: 14px;
+    font-family: "Roboto";
+    margin: 1vw 0 0 0;
+    cursor: pointer;
+}
+
+
+@media (min-width: 980px)  {
+  
+  .news-module {
+  width: 100vw;
+    padding: 48px 0 48px 0;
+}
+  
+  .news-sub-module {
+    width: 60vw;
+    height: auto;
+    margin: 12px 48px 12px 48px;
+    padding: 24px;
+}
+  
+  .news-date {
+  font-size: 16px;
+line-height: 1.5;
+  }
+  
+.header-style-one {
+font-size: 32px;
+line-height: 1.125;
+}
+  
+  .news-more {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .news-description {
+font-size: 16px;
+line-height: 1.5;
+}
+  
+}
+
+
+
+
+
+
